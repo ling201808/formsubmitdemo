@@ -68,8 +68,10 @@
                     <h1>Contact</h1>
                     <div>
                         <form action="https://formsubmit.co/el/gaciha" method="POST" class="needs-validation" novalidate>
+                            <input type="text" name="_honey" style="display: none;">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_next" value="https://ling201808.github.io/formsubmitdemo/success.html">
                             <div class="row align-items-center contact justify-content-left">
-
                                 <div class="col-10 col-md-5 my-3">
                                     <input type="text" class="form-control input" id="name" name="name" placeholder="Name" required>
                                     <div class="invalid-feedback">
@@ -93,7 +95,7 @@
                                 </div>
                                 <div class="col-10 col-md-10 my-3">
                                     <!-- <input type="text" class="form-control" id="comment" placeholder="Comment" required> -->
-                                    <textarea name="comment"  type="text" class="form-control input" name="comment" id="comment" placeholder="Comment"></textarea>
+                                    <textarea type="text" class="form-control input" name="comment" id="comment" placeholder="Comment"></textarea>
                                 </div>
                             </div>
                             <button type='submit' class="btn button mt-3 ml=0">Send</button>
