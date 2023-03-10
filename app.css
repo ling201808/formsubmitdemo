@@ -1,0 +1,256 @@
+body {
+    background: #1C1925;
+    font-family: 'Sen', sans-serif;
+    color:white;
+}
+
+.blurb h1 {
+    /* color: rgb(255,255,255,0.75); */
+    font-weight: 90;
+    font-size: 1.8rem;
+}
+
+.blurb {
+    color: rgb(255,255,255,0.75);
+    font-weight: 100;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: left;
+    align-content: left;
+}
+
+.blurb:first-child {
+    padding-top:4rem;
+}
+.buy:first-child {
+    padding-top:4rem;
+}
+
+.button {
+    background-color:rgb(252, 136, 2);
+    border:1.9px solid #1C1925;
+    color:black;
+    padding: 0.7em 2.5em;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    transition: 0.1s;
+}
+
+.button:hover {
+    background-color: rgb(252, 136, 2);
+    border:1.5px solid rgb(252, 136, 2);
+    color:white;
+}
+
+.explaination p:first-child {
+    align-content: center;
+    font-size:1rem;
+}
+
+.explaination p {
+    font-size:1rem;
+}
+
+.content h1{
+    color:white;
+}
+
+.content {
+    padding-top:2rem;
+}
+
+
+/* #signup {
+    color: #1C1925;
+} */
+#mainNavbar {
+    font-size: 1.5rem;
+    font-weight: 100; 
+    background: #1C1925;
+}
+
+#mainNavbar .nav-link {
+    color: rgb(255,255,255,0.75);
+    font-size:16px;
+}
+
+#mainNavbar .nav-link:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+#mainNavbar .navbar-brand {
+    color: rgb(255,255,255,0.75);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#mainNavbar .navbar-brand:hover {
+    color: white;
+}
+
+.navbar.scrolled {
+    background: #1C1925;
+    transition: background 500ms;
+}
+
+#mainNavbar .nav-link {
+    color:white;
+    color: rgb(255,255,255,0.75);
+    font-size:16px;
+    margin-left:1em;
+    font-weight: bold;
+}
+ 
+.signup {
+    background-color: rgb(252, 136, 2);
+    color:#3E3D43;  
+}
+
+.signup h2{
+    color: black;
+    margin-top:0.5em;
+}
+
+.signup .input{
+    border:black 3px solid;
+    background-color: rgb(252, 136, 2);
+    color:black;
+}
+.signup .input:focus{
+    border: 3px solid black;
+    box-shadow: 0 0 2px black;
+    outline-offset: 0px;
+    outline: none;
+    color:black;
+}
+
+.signup button{
+    background-color:rgb(252, 136, 2);
+    /* border:#3E3D43 solid 1px; */
+    border: none;
+    height:36px;
+    width:37px;
+    margin-bottom: 2em;
+}
+
+.signup button:hover{
+    cursor: pointer;
+}
+
+.signup button:click{
+    background-color:rgb(252, 136, 2);
+    /* border:#3E3D43 solid 1px; */
+    border: none;
+    height:36px;
+    width:37px;
+    margin-bottom: 2em;
+    outline-offset: 0px;
+    outline: none;
+    /* color:white; */
+}
+
+#email {
+    color: #3E3D43;
+    border:#3E3D43 solid 1px;
+    height:40px;
+    width:400px;
+    margin-bottom: 2em;
+    margin-right:-2.5em;
+}
+
+.contact .input{
+    background-color: #1C1925;
+    border-radius: 0;
+    height:3em;
+    color:white;
+}
+.contact .input:focus{
+    border: 2px solid white;
+    /* box-shadow: 0 0 2px white; */
+    outline-offset: 0px;
+    outline: none;
+    color:white;
+}
+
+#comment{
+    height: 100px;
+}
+
+.card{
+    background-color: #1C1925;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 22vw;
+    object-fit: fit;
+}
+
+h1{
+    font-size: 60px;
+    font-weight:bold;
+}
+
+h2{
+    font-size: 50px;
+    font-weight:bold;
+}
+
+/* #footer .nav-link {
+    color: rgb(255,255,255,0.75);
+} */
+
+footer .nav-link:hover {
+    /* color: white; */
+    text-decoration: underline;
+}
+
+@media only screen and (min-width: 1200px) {
+    .explaination p:first-child {
+        font-size:1.1rem;
+    }
+    .explaination p {
+        font-size:1.1rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    main {
+        min-height:60vh;
+    }
+}
+
+
+@media only screen and (max-width: 992px) {
+    .explaination p {
+        font-size:0.9rem;
+    }
+
+    .explaination p:first-child {
+        font-size:0.9rem;
+    }
+
+    .blurb h1 {
+        /* color: rgb(255,255,255,0.75); */
+        font-weight: 90;
+        font-size: 1.5rem;
+    }
+    .content img {
+        object-fit: cover;
+        height: 198px;
+        width:100%;
+    }
+    .content .blurb {
+        padding-top:3em;
+    }
+    .blurb .btn {
+        margin-bottom: 0;
+    }
+    .card-img-top {
+        width: 70%;
+        height: 55vw;
+        object-fit: fit;
+      }
+
+  }
