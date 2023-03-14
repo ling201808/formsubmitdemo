@@ -51,9 +51,10 @@ table {
 }
 
 body{
-    font-size:17px;
+    font-size:16px;
     font-family: "Roboto","Arial",sans-serif;
 }
+
 #content-img-one{
     object-fit: cover;
     height:250px;
@@ -81,6 +82,7 @@ body{
     color: white;
     text-decoration: underline;
 }
+
 .logo-image{
     width: 46px;
     height: 46px;
@@ -88,6 +90,7 @@ body{
     overflow: hidden;
     margin-top: 5px;
 }
+
 #mainNavbar .navbar-brand {
     color: rgb(255,255,255,0.75);
     font-size: 2rem;
@@ -108,11 +111,12 @@ body{
     background-color:rgb(252, 136, 2);
     border:1.9px solid #1C1925;
     color:black;
-    padding: 0.7em 2.5em;
+    padding: 0.5em 2em;
     cursor: pointer;
     margin-top: 1rem;
     margin-bottom: 2rem;
     transition: 0.1s;
+    font-size:20px;
 }
 
 .button:hover {
@@ -146,7 +150,6 @@ body{
     outline-offset: 0px;
     outline: none;
     border: none;
-
 }
 
 input::placeholder {
@@ -179,13 +182,6 @@ footer .nav-link:hover {
     text-decoration: underline;
 }
 
-/* .content h1{
-    font-size: 50px;
-}
-
-.content h2{
-    font-size: 40px;
-} */
 @media only screen and (min-width: 768px) {
     body{
         background:#1C1925; 
@@ -230,13 +226,7 @@ footer .nav-link:hover {
     #email {
         width:40%;
     }
-    /* .content h1{
-        font-size: 60px;
-    }
-    
-    .content h2{
-        font-size: 50px;
-    } */
+
 }
 
 
