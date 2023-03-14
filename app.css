@@ -84,16 +84,15 @@ body{
 }
 
 .logo-image{
-    width: 46px;
-    height: 46px;
-
+    width: 43px;
+    height: 43px;
     overflow: hidden;
     margin-top: 5px;
 }
 
 #mainNavbar .navbar-brand {
     color: rgb(255,255,255,0.75);
-    font-size: 2rem;
+    font-size: 1.3rem;
     font-family: 'Sen', sans-serif;
     font-weight: bold;
 }
@@ -216,7 +215,19 @@ footer .nav-link:hover {
     .content h2{
         font-size: 50px;
     }
-
+    .logo-image{
+        width: 43px;
+        height: 43px;
+        overflow: hidden;
+        margin-top: 5px;
+    }
+    
+    #mainNavbar .navbar-brand {
+        color: rgb(255,255,255,0.75);
+        font-size: 2rem;
+        font-family: 'Sen', sans-serif;
+        font-weight: bold;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
