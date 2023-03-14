@@ -158,11 +158,11 @@ input::placeholder {
 
 #email {
     background-color: rgb(252, 136, 2);
-    color: #3E3D43;
     border:#3E3D43 solid 1px;
     height:40px;
     width:70%;
     margin-right:-2.5em;
+    border-radius: 0;
 }
 
 .subscribe .input:focus{
