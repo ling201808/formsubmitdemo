@@ -188,12 +188,12 @@ footer .nav-link:hover {
     }
     #content-img-one{
         object-fit: cover;
-        height:380px;
+        height:400px;
         width:100%;
     }
     #content-img-two {
         object-fit: cover;
-        height:350px;
+        height:360px;
         width:100%;
     }
     #email {
