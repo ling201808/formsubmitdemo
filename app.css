@@ -121,11 +121,12 @@ body{
 
 .subscribe button{
     background-color:rgb(252, 136, 2);
+    color:#262528; 
     border: none;
     outline-offset: 0px;
     outline: none;
     height:38px;
-    width:44px;
+    width:43px;
     transition: background 300ms;
 }
 
