@@ -1,77 +1,79 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
 body {
-    background: #1C1925;
-    font-family: 'Sen', sans-serif;
-    color:white;
+    background:#1C1925;
+    /* background:#1C1925; */
+    color:rgb(255,255,255,0.75);
+    line-height: 1.3;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-.blurb h1 {
-    /* color: rgb(255,255,255,0.75); */
-    font-weight: 90;
-    font-size: 1.8rem;
+body{
+    font-size:18px;
+}
+#content-img-one{
+    object-fit: cover;
+    height:250px;
+    width:100%;
 }
 
-.blurb {
-    color: rgb(255,255,255,0.75);
-    font-weight: 100;
-    font-size: 1rem;
-    line-height: 1.5;
-    text-align: left;
-    align-content: left;
+#content-img-two {
+    object-fit: cover;
+    height:220px;
+    width:100%;
 }
 
-.blurb:first-child {
-    padding-top:4rem;
-}
-.buy:first-child {
-    padding-top:4rem;
-}
-
-.button {
-    background-color:rgb(252, 136, 2);
-    border:1.9px solid #1C1925;
-    color:black;
-    padding: 0.7em 2.5em;
-    cursor: pointer;
-    margin-bottom: 2rem;
-    transition: 0.1s;
-}
-
-.button:hover {
-    background-color: rgb(252, 136, 2);
-    border:1.5px solid rgb(252, 136, 2);
-    color:white;
-}
-
-.explaination p:first-child {
-    align-content: center;
-    font-size:1rem;
-}
-
-.explaination p {
-    font-size:1rem;
-}
-
-.content h1{
-    color:white;
-}
-
-.content {
-    padding-top:2rem;
-}
-
-
-/* #signup {
-    color: #1C1925;
-} */
 #mainNavbar {
-    font-size: 1.5rem;
-    font-weight: 100; 
     background: #1C1925;
 }
 
 #mainNavbar .nav-link {
     color: rgb(255,255,255,0.75);
-    font-size:16px;
+    font-family: 'Sen', sans-serif;
+    font-size:18px;
+    /* margin-left:1em; */
 }
 
 #mainNavbar .nav-link:hover {
@@ -82,6 +84,7 @@ body {
 #mainNavbar .navbar-brand {
     color: rgb(255,255,255,0.75);
     font-size: 2rem;
+    font-family: 'Sen', sans-serif;
     font-weight: bold;
 }
 
@@ -91,33 +94,63 @@ body {
 
 .navbar.scrolled {
     background: #1C1925;
-    transition: background 500ms;
+    transition: background 450ms;
 }
 
-#mainNavbar .nav-link {
-    color:white;
-    color: rgb(255,255,255,0.75);
-    font-size:16px;
-    margin-left:1em;
-    font-weight: bold;
-}
- 
-.signup {
-    background-color: rgb(252, 136, 2);
-    color:#3E3D43;  
-}
-
-.signup h2{
-    color: black;
-    margin-top:0.5em;
-}
-
-.signup .input{
-    border:black 3px solid;
-    background-color: rgb(252, 136, 2);
+.button {
+    background-color:rgb(252, 136, 2);
+    border:1.9px solid #1C1925;
     color:black;
+    padding: 0.7em 2.5em;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    transition: 0.1s;
 }
-.signup .input:focus{
+
+.button:hover {
+    background-color: rgb(252, 136, 2);
+    border:1.5px solid rgb(252, 136, 2);
+    color:rgb(255,255,255,0.75);
+}
+
+.subscribe {
+    background-color: rgb(252, 136, 2);
+    color:#262528;  
+}
+
+.subscribe button{
+    background-color:rgb(252, 136, 2);
+    border: none;
+    outline-offset: 0px;
+    outline: none;
+    height:38px;
+    width:44px;
+    transition: background 300ms;
+}
+
+.subscribe button:hover{
+    cursor: pointer;
+}
+
+.subscribe button:active{
+    background:rgb(233, 130, 13);
+    outline-offset: 0px;
+    outline: none;
+    border: none;
+
+}
+
+#email {
+    background-color: rgb(252, 136, 2);
+    color: #3E3D43;
+    border:#3E3D43 solid 1px;
+    height:40px;
+    width:70%;
+    margin-right:-2.5em;
+}
+
+.subscribe .input:focus{
     border: 3px solid black;
     box-shadow: 0 0 2px black;
     outline-offset: 0px;
@@ -125,132 +158,72 @@ body {
     color:black;
 }
 
-.signup button{
-    background-color:rgb(252, 136, 2);
-    /* border:#3E3D43 solid 1px; */
-    border: none;
-    height:36px;
-    width:37px;
-    margin-bottom: 2em;
+main {
+    min-height:70vh;
 }
-
-.signup button:hover{
-    cursor: pointer;
-}
-
-.signup button:click{
-    background-color:rgb(252, 136, 2);
-    /* border:#3E3D43 solid 1px; */
-    border: none;
-    height:36px;
-    width:37px;
-    margin-bottom: 2em;
-    outline-offset: 0px;
-    outline: none;
-    /* color:white; */
-}
-
-#email {
-    color: #3E3D43;
-    border:#3E3D43 solid 1px;
-    height:40px;
-    width:400px;
-    margin-bottom: 2em;
-    margin-right:-2.5em;
-}
-
-.contact .input{
-    background-color: #1C1925;
-    border-radius: 0;
-    height:3em;
-    color:white;
-}
-.contact .input:focus{
-    border: 2px solid white;
-    /* box-shadow: 0 0 2px white; */
-    outline-offset: 0px;
-    outline: none;
-    color:white;
-}
-
-#comment{
-    height: 100px;
-}
-
-.card{
-    background-color: #1C1925;
-}
-
-.card-img-top {
-    width: 100%;
-    height: 22vw;
-    object-fit: fit;
-}
-
-h1{
-    font-size: 60px;
-    font-weight:bold;
-}
-
-h2{
-    font-size: 50px;
-    font-weight:bold;
-}
-
-/* #footer .nav-link {
-    color: rgb(255,255,255,0.75);
-} */
 
 footer .nav-link:hover {
-    /* color: white; */
     text-decoration: underline;
 }
 
-@media only screen and (min-width: 1200px) {
-    .explaination p:first-child {
-        font-size:1.1rem;
-    }
-    .explaination p {
-        font-size:1.1rem;
-    }
+/* .content h1{
+    font-size: 50px;
 }
 
-@media only screen and (min-width: 1200px) {
-    main {
-        min-height:60vh;
+.content h2{
+    font-size: 40px;
+} */
+@media only screen and (min-width: 768px) {
+    body{
+        background:#1C1925; 
     }
-}
-
-
-@media only screen and (max-width: 992px) {
-    .explaination p {
-        font-size:0.9rem;
-    }
-
-    .explaination p:first-child {
-        font-size:0.9rem;
-    }
-
-    .blurb h1 {
-        /* color: rgb(255,255,255,0.75); */
-        font-weight: 90;
-        font-size: 1.5rem;
-    }
-    .content img {
+    #content-img-one{
         object-fit: cover;
-        height: 198px;
+        height:380px;
         width:100%;
     }
-    .content .blurb {
-        padding-top:3em;
+    #content-img-two {
+        object-fit: cover;
+        height:350px;
+        width:100%;
     }
-    .blurb .btn {
-        margin-bottom: 0;
+    #email {
+        width:50%;
     }
-    .card-img-top {
-        width: 70%;
-        height: 55vw;
-        object-fit: fit;
-      }
 
-  }
+}
+
+@media only screen and (min-width: 992px) {
+    body{
+        background:#1C1925; 
+    }
+    #email {
+        width:40%;
+    }
+    .content h1{
+        font-size: 60px;
+    }
+    
+    .content h2{
+        font-size: 50px;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    body{
+        background:#1C1925; 
+    }
+    #email {
+        width:40%;
+    }
+    /* .content h1{
+        font-size: 60px;
+    }
+    
+    .content h2{
+        font-size: 50px;
+    } */
+}
+
+
